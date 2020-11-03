@@ -1,4 +1,27 @@
-baseURL = "https://hugo.onrender.com"
+baseurl = "/"
 languageCode = "en-us"
-title = "Deploy Hugo on Render"
-theme = "ananke"
+title = "Eric's Blog"
+theme = "tailwind_journal"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[Params]
+    author = "Eric"
+    mainSections = ["posts"]
+    avatar = "willa.jpg"
+    intro = true
+    headline = "Eric's Blog"
+    description = "Primarily about my software development projects, sometimes about my dog."
+    tagline = "Primarily about my software development projects, sometimes about my dog."
+    github = "https://github.com/okadoke"
+    twitter = "https://twitter.com/ej_eleven"
+    email = "XXX@example.com"
+    opengraph = true
+    shareTwitter = true
+    dateFormat = "Mon, Jan 2, 2006"
+
+[taxonomies]
+    tag = "tags"
+
+[permalinks]
+    posts = "/posts/:year/:month/:title/"
